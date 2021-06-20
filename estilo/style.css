@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(49, 49, 49) !important;
+}
+
+.box-login{
+    position: relative;
+    top: 150px;
+    background-color: #DCDCDC;
+    padding: 35px 45px !important;
+    box-shadow: 10px 9px 3px dimgray;
+}
+
+.box-login p{
+    background: rgb(197, 71, 71) !important;
+    position: absolute;
+    top: -34px;
+    left: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px;
+
+}
+
+.formLogin h1{
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    font-family: sans-serif;    
+}
+
+.formLogin label{
+    font-weight: bold !important;
+    position: relative;
+    margin-bottom: 5px;
+    font-family: sans-serif; 
+}
+
+.formLogin input[type="text"], input[type="password"] {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.formLogin button{
+    position: relative;
+    top: 15px;
+    margin-bottom: 25px;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+
+@media screen and (max-width: 767px){
+    body{
+        padding: 0 90px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .box-login{
+        padding: 35px 30px !important;
+    }
+}

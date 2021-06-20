@@ -1,0 +1,719 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#close{
+    text-align: right;
+    margin-bottom: 10px !important;
+}
+
+#close i{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    text-align: right;
+    margin-bottom: 10px !important;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: -7px;
+    color: rgb(255, 255, 255);
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #1bb3b3;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #425661;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul p i{
+    padding: 0 25px;
+}
+
+#sidebar ul li a i{
+    padding: 0 25px;
+}
+
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.0em;
+    display: block;
+    color: #FFFFFF;
+}
+
+#sidebar ul li a:hover {
+    background: #058d8d;
+    text-decoration: none;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #006161;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #299999;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+/* ---------------------------------------------------
+    HEADER CONTENT STYLE
+----------------------------------------------------- */
+
+#inicio{
+    display: block;
+}
+
+#inicio h2{
+    color: rgb(0, 0, 0);
+    padding: 0 100px;
+    font-size: 20px;
+}
+
+#inicio h2 i{
+    margin-right: 20px;
+}
+
+#cabecalho_empresa{
+    display: none;
+}
+
+#cabecalho_empresa{
+    display: none;
+}
+
+#cabecalho_empresa h2{
+    color: rgb(0, 0, 0);
+    padding: 0 100px;
+    font-size: 20px;
+}
+
+#cabecalho_empresa h2 i{
+    margin-right: 20px;
+}
+
+#cadastro{
+    display: none;
+}
+
+#formAnotacoes{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.fa-caret-down{
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: rgb(183, 193, 194);
+    width: 25px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.fa-caret-down:hover{
+    opacity: 40%;    
+}
+
+.fa-plus-circle{
+    color: green;
+    cursor: pointer;
+}
+
+#subAnotacoes{
+    display: none;
+}
+
+#areaAnotacoes{
+    width: 100% !important;
+    height: 80px !important;
+    display: none;
+}
+
+.fecharAnotacaoCarregada{
+    color: rgb(216, 168, 34);
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    float: right;
+}
+
+.fecharAnotacao{
+    color: rgb(216, 168, 34);
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    float: right;
+}
+
+.fa-trash{
+    color: rgb(218, 25, 25);
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 17px;
+}
+
+.fa-check-square{
+    color: rgb(13, 177, 54);
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 5px;
+}
+
+.fa-check-square:hover{
+    color: rgb(13, 133, 43);
+}
+
+.fa-pen-square{
+    color: rgb(44, 140, 230);
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+    float: right;
+}
+
+.fa-pen-square:hover{
+    color: rgb(26, 100, 170);
+}
+
+
+.clear{
+    clear: both;
+}
+
+#resultadoAnotacoes{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.areaAnotacoesCarregada{
+    position: relative;
+    top: 20px !important;
+    margin-bottom: 20px;
+    width: 100% !important;
+    height: 50px !important;
+}
+
+#cadastro h2{
+    color: rgb(0, 0, 0);
+    padding: 0 100px;
+    font-size: 20px;
+}
+
+#cadastro h2 i{
+    margin-right: 20px;
+}
+
+.formCadastroUsuario {
+    position: relative;
+    top: 40px;
+    /*background-color: #D3D3D3 !important;*/
+    background-color: #425661 !important;
+    padding: 50px 40px;
+    border: 1px solid #9c9c9c;
+    border-radius: 7px;
+    margin-bottom: 50px;
+}
+
+.formCadastroUsuario label{
+    color: #ffffff;
+}
+
+.formCadastroEmpresa {
+    position: relative;
+    top: 40px;
+    background-color: #425661 !important;
+    padding: 40px 40px;
+    border: 1px solid #9c9c9c;
+    border-radius: 7px;
+    margin-bottom: 50px;
+}
+
+.formCadastroEmpresa label{
+    color: #ffffff;
+}
+
+.btnCadastrar{
+    cursor: pointer;
+    color: rgb(57, 182, 57);
+    position: relative;
+    top: 15px;
+}
+
+.btnCadastrar:hover{
+    color: rgb(35, 114, 35);
+}
+
+/* Estilização do Retorno das Exceptions do Cadastro */
+
+.divErros {
+    padding: 7px 80px;
+    position: relative;
+    top: 0;
+    margin-bottom: 15px !important;
+    background: rgb(197, 71, 71);
+    color: white;
+    font-family: sans-serif;
+}
+
+.divAlerta{
+    padding: 12px 80px;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px !important;
+    background: rgb(231, 184, 53);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+/* Estilização do Retorno de Cadastro Bem-sucedido */
+
+.cadSucesso{
+    padding: 13px 80px;
+    position: relative;
+    top: 0;
+    background: rgb(28, 158, 71);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.cadAltSucesso{
+    padding: 13px 80px;
+    position: relative;
+    top: 0;
+    background: rgb(28, 158, 71);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#pesquisarUsuario {
+    display: none;
+}
+
+#pesquisarUsuario h2{
+    color: rgb(0, 0, 0);
+    padding: 0 100px;
+    font-size: 20px;
+}
+
+#pesquisarUsuario h2 i{
+    margin-right: 20px;
+}
+
+.tabelaPesquisa{
+    background: rgb(219, 219, 219);    
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.corThead{
+    background: #a4b4b4;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+table{
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#pesquisarUsuario hr{
+     position: relative;
+     top: 20px !important;
+     margin-bottom: 50px !important;
+ }
+
+.btnPesquisar{
+    cursor: pointer;
+}
+
+.btnPesquisar:hover{
+    opacity: 40%;
+}
+
+.fa-eye{
+    color:rgb(29, 159, 211);
+}
+
+.fa-eye:hover{
+    color:rgb(17, 94, 124);
+}
+
+ #formCadastroUsuario2 {
+    position: relative;
+    top: 4;
+    padding: 0 70px;
+    background-color: #425661 !important;
+    padding: 85px 100px;
+    border: 1px solid #9c9c9c;
+    border-radius: 7px;
+    margin-bottom: 50px;
+}
+
+#formCadastroUsuario2 label {
+    color: #ffffff;
+}
+
+.botoes_acao{    
+    float: right !important;
+    position: relative;
+    top: 15px;
+}
+
+.col-{
+    position: relative;
+    top: 5px;
+}
+
+.fa-edit{
+    cursor: pointer;
+    color: rgb(37, 143, 192);
+    margin-right: 15px;
+}
+
+.fa-edit:hover{
+    color: rgb(30, 106, 141);
+}
+
+.fa-window-close{
+    cursor: pointer;
+    color: rgb(233, 199, 51);
+    margin-right: 15px;
+}
+
+.fa-window-close:hover{
+    color: rgb(170, 144, 27);
+}
+
+.fa-trash-alt{
+    cursor: pointer;
+    color: rgb(204, 68, 68);
+    margin-right: 15px;
+}
+
+.fa-trash-alt:hover{
+    color: rgb(148, 36, 36);
+}
+
+#btn_cadAux{
+    display: block;
+    color: rgb(145, 145, 145);
+    margin-right: 15px;
+}
+
+#btn_cad{
+    display: none;
+    cursor: pointer;
+    color: rgb(57, 182, 57);
+    margin-right: 15px;
+}
+
+#btn_cad:hover{
+    color: rgb(24, 116, 24);
+}
+
+#btn_cadAuxUsuario{
+    display: block;
+    color: rgb(145, 145, 145);
+    margin-right: 15px;
+}
+
+#btn_cadUsuario{
+    display: none;
+    cursor: pointer;
+    color: rgb(57, 182, 57);
+    margin-right: 15px;
+}
+
+#btn_cadUsuario:hover{
+    color: rgb(24, 116, 24);
+}
+
+
+
+/* Página Sobre */
+
+#sobre{
+    display: none;
+}
+
+#sobre h2{
+    color: rgb(0, 0, 0);
+    padding: 0 100px;
+    font-size: 20px;
+}
+
+#sobre h2 i{
+    margin-right: 20px;
+}
+
+.quem-sou{
+    background-color: #1bb3b3;
+    padding: 10px 0;
+    box-shadow: 12px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.quem-sou p{
+    font-size: 17px;
+    position: relative;
+    top: 7px;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+
+.minha-foto{
+    float: left;
+    width: 30%;
+    height: 150px;
+    box-shadow: 8px 7px 3px rgba(0, 0, 0, 0.2);
+    margin-right: 60px;
+    margin-bottom: 23px;
+}
+
+.descricao-quem-sou{
+    text-align: justify;
+}
+
+
+.topicos-quem-sou{
+    position: relative;
+    top: 50px;
+}
+
+.topicos-quem-sou label{
+    font-size: 19px;
+    position: relative;
+    top: 7px;
+    color: rgb(128, 128, 128);
+    margin-left: 20px;
+    margin-bottom: 35px;
+    font-style:oblique;
+}
+
+.topicos-quem-sou ul{
+    font-size: 17px;
+    position: relative;
+    top: 7px;
+    color: rgb(167, 167, 167);
+    /*margin-left: 20px;*/
+}
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    .sidebarCollapse span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #formCadastroUsuario2{
+        padding: 80px 40px;
+        position: relative;
+    }
+    .botoes_acao{    
+        position: relative;
+        top: 15px;
+        margin-right: 7px !important;
+    }
+}
+
+
+@media screen and (max-width: 929px) {
+
+    #inicio h2{
+        font-size: 0;
+        padding: 0;
+    }
+    .fa-home{
+        font-size: 25px;  
+    }
+
+    #cabecalho_empresa h2{
+        font-size: 0;
+        padding: 0;
+    }
+    .fa-building{
+        font-size: 25px;  
+    }
+
+    #cadastro h2{
+        font-size: 0;
+        padding: 0;
+    }
+    .add-user-icon{
+        font-size: 25px;  
+    }
+
+    #pesquisarUsuario h2{
+        font-size: 0;
+        padding: 0;
+    }
+    .pesq-func-icon{
+        font-size: 25px;  
+    }
+
+    #sobre h2{
+        font-size: 0;
+        padding: 0;
+    }
+    
+    #sobre h2 i{
+        font-size: 25px;
+    }
+
+
+}
